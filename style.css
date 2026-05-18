@@ -1,61 +1,61 @@
-img {
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left:0;
-    position: fixed;
+*{ padding:0px;
+   margin: 0px;
+
+
+
+
 }
+
 body{
-    
-}
-.log-in_container{
-    
-    background: rgba(255, 255, 255, 0.862);
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    
-    
-    
-}
+display:flex;
+background-color: aqua;
+min-height: 50%;
+justify-content: center;
+text-align: center;
 
-.log-in_container label{
-    text-align: left;
-    margin:10px 260px 10px 0px;
-   
+
 
 }
-.log-in_container input{
-    width: 100%;
-    margin: 10px 0 10px;
 
-}
-input, label,button{
-    font-family: 'Press Start 2P', cursive;
-    font-size:xx-small;
-}
 h2{
-    font-family: 'Press Start 2P', cursive;
-   color: #ffcb05;
-  text-shadow: 
-    2px 2px #3d7dca,  
-    4px 4px #2a52be;
-}
-.error{
-    font-family: 'Press Start 2P', cursive;
-   color: #411b08;
-    text-shadow: 
-    2px 2px #cbae3b,  
-    4px 4px #b6c126;
-    font-size:xx-small;
+
+font-weight:100%;
+text-align: center;
+margin: 10px;
+
 }
 
-input:hover{
-    border-color: #3d7dca; /* Pokémon blue */
-  background-color: #f0f8ff;
+.login-container{
+  margin: 50px;
+  background-color: white;
+  padding: 30px;
+
+
 }
+
+.form-group{
+       margin-bottom: 20px;
+}
+
+input{
+width: 100%;
+
+}
+
+button{
+width: 100%;
+background-color: green;
+color: white;
+}
+
+.error{
+color: red;
+
+}
+
+.success{
+color:green;
+}
+
+
+

@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Log-In Form</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width", initial scale="1.0">
+      <title>LogIn Form</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="login-container">
+          <h2>Log In</h2>
+          <form id="LogInForm" onsubmit="handleLogIn(event)">
+              <div class="form-group">
+                 <label for="username"> Username </label>
+                 <input type="text" id="username" placeholder="Enter Userame" required>
+                 <div class="error" id="usernameError"></div>
 
-    </head>
-    <body>
-            <img src="pokemon wallpaper starter.jpg" alt="wall">
-        <div class="log-in_container">
-          <form id="loginform">
-            <h2>Trainer Log In</h2>
-            <label for="gmail">Gmail</label>
-            <input type="email" id="gmail" name="email" placeholder="Enter your Gmail, Trainer" required>
-            <label id="gmailerror" class="error"></label> <br>
+              </div>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Please enter your Password" required>
-            <small id="passworderror" class="error"></small><br>
+              <div class="form-group">
+                 <label for="password"> Password </label>
+                 <input type="password" id="password" placeholder="Enter Password"required>
+                 <div class="error" id="passwordError"></div>
 
-            <button type="submit">Log In</button>
+
+              </div>
+                 <button type="submit">Log In</button>
+                 <div class="success" id="successMessage"></div>
+           
           </form>
-        </div>
-     <script src="script.js"></script>
+      </div>
+  <script src="script.js"></script>
+  </body>
 
-    </body>
+
 </html>
